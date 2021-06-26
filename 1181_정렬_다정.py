@@ -22,7 +22,6 @@ for i in range(0, len(lst)-1):
         lst[small] = lst[i]
         lst[i] = temp
 
-
 lst.sort()
 for i in range(0, len(lst)):
     print(lst[i][0])
