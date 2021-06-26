@@ -67,3 +67,4 @@ for _ in range(int(input())):
         X = int(cmd[5:])
         ll.add_node(X)
         ll.cnt += 1
+
