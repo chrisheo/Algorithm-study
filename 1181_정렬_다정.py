@@ -25,5 +25,3 @@ for i in range(0, len(lst)-1):
 lst.sort()
 for i in range(0, len(lst)):
     print(lst[i][0])
-
-

@@ -1,6 +1,6 @@
 import sys
 st = []
-for i in range(int(sys.stdin.readline()),0,-1):
+for i in range(int(sys.stdin.readline()), 0, -1):
     st.append(i)
 if len(st) == 1:
     print(st[0])

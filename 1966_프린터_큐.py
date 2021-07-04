@@ -1,7 +1,8 @@
 from collections import deque
 import sys
 
-def count(paperF,weights):
+
+def count(paperF, weights):
     N = int(paperF[0])
     paper = int(paperF[1])
     max_index = weights.index(max(weights))
@@ -15,7 +16,7 @@ def count(paperF,weights):
         if max_index > paper:
             for i in range(max_index + 1):
                 weights.append(weights.popleft())
-            paper = l - max_index - 1 + paper 
+            paper = l - max_index - 1 + paper
             paperF[1] = paper
             weights.pop()
             return 1 + count(paperF, weights)
@@ -25,9 +26,8 @@ def count(paperF,weights):
             paper = paper - max_index - 1
             paperF[1] = paper
             weights.pop()
-            return 1 + count(paperF,weights)
-        
-        
+            return 1 + count(paperF, weights)
+
 
 Test_case = int(input())
 for i in range(Test_case):

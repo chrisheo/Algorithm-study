@@ -3,7 +3,7 @@ import sys
 
 l1 = []
 d1 = defaultdict(list)
-for i in range(int(input())):  
+for i in range(int(input())):
     l1.append(sys.stdin.readline().strip())
 
 l1 = list(set(l1))

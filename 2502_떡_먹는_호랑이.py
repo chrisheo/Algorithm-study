@@ -1,7 +1,9 @@
-d,k = input().split()
+d, k = input().split()
 d = int(d)
 k = int(k)
-def rev_pivo(day,first,second):
+
+
+def rev_pivo(day, first, second):
     if day == 3:
         print(first)
         print(second)
@@ -12,9 +14,9 @@ def rev_pivo(day,first,second):
         second = temp
         if first > second:
             return -1
-        return rev_pivo(day - 1,first,second)
-for i in range(int(k/2),0,-1):
-    if rev_pivo(d,i,k-i) != -1:
-        break
+        return rev_pivo(day - 1, first, second)
 
-    
+
+for i in range(int(k/2), 0, -1):
+    if rev_pivo(d, i, k-i) != -1:
+        break
