@@ -1,5 +1,3 @@
-# 개요를 읽고
-
 1. 참고할만한 코딩 연습 사이트
    https://leetcode.com/
    https://programmers.co.kr/
