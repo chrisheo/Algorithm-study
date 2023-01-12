@@ -15,7 +15,6 @@ def dfs(start, dic):
             visited.append(i)
             dfs(i, dic)
 
-
 visited = []
 dfs(1, dic)
 print(len(visited)-1)
